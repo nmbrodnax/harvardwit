@@ -2,9 +2,7 @@
 # 11/15/17 17:39:00
 
 # source: Female IT Hires (2011-2017)
-year <- c(2017, 2016, 2015, 2014, 2013, 2012, 2011)
-pct_fem_it <- c(0.30061, 0.37857, 0.31818, 0.31474, 0.36842, 0.25571, 0.29319)
-fem_it_hires <- data.frame(year, pct_fem_it)
+fem_it_hires <- read.csv("raw/fem_it_hires.csv", header = TRUE)
 write.table(fem_it_hires, file = "fem_it_hires.dat")
 
 # source: IT Hires, Grade (2011-2017)
